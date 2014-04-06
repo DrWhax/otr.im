@@ -1,0 +1,42 @@
+.navbar {
+	margin-bottom: 0;
+}
+
+#emphasisfeaturette {
+	background: #fafafa;
+	margin-top: 2em;
+padding: 1em 2em;
+}
+
+#img {
+	background: url(../img/whisper.jpg) center top no-repeat;
+	padding: 1.5em 4em;
+	color: #fff;
+	text-shadow: 1px 0px 1px #222;
+	min-height: 420px;
+	font-size: 1.7em;
+}
+
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	width: auto !important;
+}
+
+.imgdesc {
+	margin: auto;
+}
+
+@media (min-height:700px) {
+	#img {
+		min-height: 630px;
+	}
+}
+
+@media (min-width:768px) {
+	.imgdesc {
+		width: 75%;
+	}
+	.imgdesc h2 {
+	    padding-left: 10em
+	}
+}
+
