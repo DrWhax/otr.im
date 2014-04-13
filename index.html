@@ -135,11 +135,13 @@
 
 	<p>OTR implements among others the authentication through the <a href="https://en.wikipedia.org/wiki/Socialist_millionaire" target="_blank">socialist millionaire</a> protocol. This means that, peers can verify each others' identity through the use of a shared secret avoiding a <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">man-in-the-middle attack</a>. Furthermore, users get around the inconvenience of manually comparing each others fingerprints through e.g, an outbound channel over the internet.<br> One can also verify the identity of a peer through comparing fingerprints. </p>
 
-	<!-- PGP text goes here, and why it fucking sucks donkeyballs. -->
-
 	<h3>PGP:</h3>
 
-	<p>PGP, which stands for "Pretty Good Privacy" was designed for encrypting, decrypting and signing e-mail and data. </p>
+	<p>PGP, which stands for "Pretty Good Privacy" was designed for encrypting, decrypting and signing e-mail and data like, texts, files, whole disk partitions.  </p>
+
+	<p>By using PGP for e-mail to exchange messages, at least two or more peers each have an keypair. Now, if you want to verify the key, you can't make use of a protocol as like with OTR. It can only be done by verifying the fingerprint of the peer you want to communicate with, preferrably over a secure channel.</p>
+
+	<p>It also comes with digital signatures which are used for message authentication and integrity checking. The latter is only used to see whether the message has been tampered with and if the sender was the real sender. With PGP you can't deny to ever have received the message like you can with OTR.</p>
 
 		</div>
 	<hr class="featurette-divider">
