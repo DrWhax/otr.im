@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 ie-7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie-8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,12 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="OTR developers">
-
     <title>OTR.im - Whispering Off The Record</title>
 
     <!-- Bootstrap core CSS -->
+	<!--
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./assets/css/custom.css" rel="stylesheet">
+	<link href="./assets/css/custom.css" rel="stylesheet">
+	-->
+	<link href="./assets/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -29,7 +35,6 @@
   <body>
     <div class="navbar-wrapper">
       <div class="container">
-
         <div class="navbar navbar-inverse navbar-static-top" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -51,112 +56,99 @@
       </div>
     </div>
 
-	<div class="container">
-		<div id="img">
-			<div class="imgdesc">
-			<h1>Instant messaging,</h1>
-			<h2>Off-the-Record</h2>
-		</div>
-	  </div>
-	</div>
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-	<!--<hr class="featurette-divider"> -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>OTR!</h2>
-          <p>OTR, which stands for Off-the-Record messaging is a cryptographic protocol that provides strong encryption for instant messaging conversations. Originally designed by, among others, Ian Goldberg. </p>
-          <p><a class="btn btn-info" href="https://otr.cypherpunks.ca/" role="button">Get to know the OTR protocol »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <h2>Bugtracker</h2>
-          <p>Help us improve OTR software by filing bugs, triaging bugs or submit patches to solve issues.</p>
-          <p><a class="btn btn-info" href="https://bugs.otr.im/" role="button">Contribute to the bugtracker »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <h2>Chat</h2>
-          <p>Many of the OTR enthusiasts and developers idle on the #OTR channel on the OFTC IRC network. Feel free to join, lurk or discuss..</p>
-          <p><a class="btn btn-info" href="http://webchat.oftc.net/?randomnick=1&channels=otr&uio=d4" role="button">IRC webchat »</a></p>
-        </div><!-- /.col-lg-4 -->
-		</div><!-- /.row -->
-		<div class="row">
-		<div class="col-lg-4">
-		<h2>Dev Mailinglist</h2>
-		<p>If you are interested in contributing to OTR development or have questions regarding using OTR libraries in your software you should reach out to the OTR-dev mailinglist.</p>
-		<p><a class="btn btn-info" href="https://lists.cypherpunks.ca/mailman/listinfo/otr-dev" role="button">Development mailinglist »</a></p>
-		</div><!-- /.col-lg-4 -->
-		<div class="col-lg-4">
-		<h2>User mailinglist</h2>
-		<p>OTR has numerous users from all kinds of backgrounds, next to it being used by several hundred-thousands throughout the the world. Signup to the user mailinglist to help us improve documentation.</p>
-		<p><a class="btn btn-info" href="https://lists.cypherpunks.ca/mailman/listinfo/otr-users" role="button">User mailinglist »</a></p>
-		</div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-	  <h2>USE OTR!</h2>
-	  <p>Is an organisation that works on security, encryption and usability of open source instant messengers (IM). Our goal is simple: improving security, usability and encryption of existing and new IM software.</p>
-	  <p><a class="btn btn-info" href="https://www.useotrproject.org/" role="button">Visit UseOTRproject's website »</a></p>
-	  </div><!-- /.col-lg-4 -->
-		</div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-     <div id="emphasisfeaturette">
-     <div class="row featurette">
-	 <h2 class=featurette-heading align="center">OTR's features</h2>
-	 <hr class="featurette-divider">
-        <div class="col-md-8">
-          <p>Encryption <span class="text-muted"> - No one else can read your instant messages over a network.</span></p>
-          <p>Authentication <span class="text-muted"> - You are assured the correspondent is who you think it is.</span></p>
-          <p>Deniability <span class="text-muted"> - The messages you send do <i>not</i> have digital signatures that are verifiable by a third party. Anyone can forge messages after a conversation to make them look like they came from you. However, <i>during</i> a conversation, your correspondent is assured the messages he or she sees are authentic and unmodified.</span></p>
-          <p>Perfect Forward Secrecy <span class="text-muted"> - If you lose control of your private keys, no previous conversation is compromised.</span></p>
+	<div class="container" id="container0">
+		<div class="container-inner">
+			<div id="img">
+				<div class="imgdesc">
+					<h1>Instant messaging,</h1>
+					<h2>Off-the-Record</h2>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="emphasisfeaturette">
-		<div class="row featurette">
-		<h2 class=featurette-heading align="center">What's the difference between PGP and OTR?</h2>
-		<hr class="featurette-divider">
-
-	<div class="col-md-8">
-	
-	<h3>OTR:</h3>
-
-	<p>OTR is designed for instant messaging. It initiates a <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange" target="_blank">key-exchange</a> between two peers when they are both online. <a href="https://en.wikipedia.org/wiki/Forward_secrecy" target="_blank">Perfect forward secrecy</a> ensures that, if one of the peers loses control of the long-lived cryptographic keys, no previous conversations can be compromised.</p>
-	
-	<p>OTR encrypted messages don't contain <a href="https://en.wikipedia.org/wiki/Digital_signature" target="_blank">digital signatures</a>. After a conversation is over, anyone could forge messages which appear to originate from one of the participants of the conversation. Which means that you can't prove the authenticity of the message. However, there is no precedence in any real-life court case with this scenario.</p>
-
-	<p>OTR implements among others the authentication through the <a href="https://en.wikipedia.org/wiki/Socialist_millionaire" target="_blank">socialist millionaire</a> protocol. This means that, peers can verify each others' identity through the use of a shared secret avoiding a <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">man-in-the-middle attack</a>. Furthermore, users get around the inconvenience of manually comparing each others fingerprints through e.g, an outbound channel over the internet.<br> One can also verify the identity of a peer through comparing fingerprints. </p>
-
-	<h3>PGP:</h3>
-
-	<p>PGP, which stands for "Pretty Good Privacy" was designed for encrypting, decrypting and signing e-mail and data like, texts, files, whole disk partitions.  </p>
-
-	<p>By using PGP for e-mail to exchange messages, at least two or more peers each have an keypair. Now, if you want to verify the key, you can't make use of a protocol as like with OTR. It can only be done by verifying the fingerprint of the peer you want to communicate with, preferrably over a secure channel.</p>
-
-	<p>It also comes with digital signatures which are used for message authentication and integrity checking. The latter is only used to see whether the message has been tampered with and if the sender was the real sender. With PGP you can't deny to ever have received the message like you can with OTR.</p>
-
+	<div class="container" id="container1">
+		<div class="container-inner">
+			<div class="row">
+				<div class="col-3">
+					<h2 class="maintitle">OTR!</h2>
+					<p>OTR, which stands for Off-the-Record messaging is a cryptographic protocol that provides strong encryption for instant messaging conversations. Originally designed by, among others, Ian Goldberg. </p>
+					<p><a class="btn btn-info" href="https://otr.cypherpunks.ca/" role="button">Get to know the OTR protocol&nbsp;»</a></p>
+				</div><!-- /.col-3 -->
+				<div class="col-3">
+					<h2 class="maintitle">Bugtracker</h2>
+					<p>Help us improve OTR software by filing bugs, triaging bugs or submit patches to solve issues.</p>
+					<p><a class="btn btn-info" href="https://bugs.otr.im/" role="button">Contribute to the bugtracker&nbsp;»</a></p>
+				</div><!-- /.col-3 -->
+				<div class="col-3">
+					<h2 class="maintitle">Chat</h2>
+					<p>Many of the OTR enthusiasts and developers idle on the #OTR channel on the OFTC IRC network. Feel free to join, lurk or discuss..</p>
+					<p><a class="btn btn-info" href="http://webchat.oftc.net/?randomnick=1&channels=otr&uio=d4" role="button">IRC webchat&nbsp;»</a></p>
+				</div><!-- /.col-3 -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-3">
+					<h2 class="maintitle">Dev Mailinglist</h2>
+					<p>If you are interested in contributing to OTR development or have questions regarding using OTR libraries in your software you should reach out to the OTR-dev mailinglist.</p>
+					<p><a class="btn btn-info" href="https://lists.cypherpunks.ca/mailman/listinfo/otr-dev" role="button">Development mailinglist&nbsp;»</a></p>
+				</div><!-- /.col-3 -->
+				<div class="col-3">
+					<h2 class="maintitle">User mailinglist</h2>
+					<p>OTR has numerous users from all kinds of backgrounds, next to it being used by several hundred-thousands throughout the the world. Signup to the user mailinglist to help us improve documentation.</p>
+					<p><a class="btn btn-info" href="https://lists.cypherpunks.ca/mailman/listinfo/otr-users" role="button">User mailinglist&nbsp;»</a></p>
+				</div><!-- /.col-3 -->
+			<div class="col-3">
+				<h2 class="maintitle">USE OTR!</h2>
+				<p>Is an organisation that works on security, encryption and usability of open source instant messengers (IM). Our goal is simple: improving security, usability and encryption of existing and new IM software.</p>
+				<p><a class="btn btn-info" href="https://www.useotrproject.org/" role="button">Visit UseOTRproject's website&nbsp;»</a></p>
+				</div><!-- /.col-3 -->
+			</div><!-- /.row -->
 		</div>
-	<hr class="featurette-divider">
 	</div>
-	  </div> <!-- ending the emphasisfeaturette div -->
 
-	  <hr class="featurette-divider">
+    <div class="container" id="container2">
+		<div class="container-inner">
+			<div class="row featurette">
+				<h2 class=featurette-heading>OTR's features</h2>
+					<p><strong>Encryption</strong>  - No one else can read your instant messages over a network.</p>
+					<p><strong>Authentication</strong>  - You are assured the correspondent is who you think it is.</p>
+					<p><strong>Deniability</strong>  - The messages you send do <i>not</i> have digital signatures that are verifiable by a third party. Anyone can forge messages after a conversation to make them look like they came from you. However, <i>during</i> a conversation, your correspondent is assured the messages he or she sees are authentic and unmodified.</p>
+					<p><strong>Perfect Forward Secrecy</strong>  - If you lose control of your private keys, no previous conversation is compromised.</p>
+			</div>
+		</div>
+	</div>
 
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>OTR - Free and open source software.</p>
+    <div class="container" id="container3">
+		<div class="container-inner">
+			<div class="row featurette">
+				<h2 class=featurette-heading>What's the difference between PGP and OTR?</h2>
+				<div class="col-2">
+					<h3 class="subtitle">OTR - Off the Record</h3>
 
-		<p>We would like to thank <a href="https://www.gandi.net/">Gandi</a> for providing us with a wildcard SSL certificate.</p>
-      </footer>
+					<p>OTR is designed for instant messaging. It initiates a <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange" target="_blank">key-exchange</a> between two peers when they are both online. <a href="https://en.wikipedia.org/wiki/Forward_secrecy" target="_blank">Perfect forward secrecy</a> ensures that, if one of the peers loses control of the long-lived cryptographic keys, no previous conversations can be compromised.</p>
+
+					<p>OTR encrypted messages don't contain <a href="https://en.wikipedia.org/wiki/Digital_signature" target="_blank">digital signatures</a>. After a conversation is over, anyone could forge messages which appear to originate from one of the participants of the conversation. Which means that you can't prove the authenticity of the message. However, there is no precedence in any real-life court case with this scenario.</p>
+
+					<p>OTR implements among others the authentication through the <a href="https://en.wikipedia.org/wiki/Socialist_millionaire" target="_blank">socialist millionaire</a> protocol. This means that, peers can verify each others' identity through the use of a shared secret avoiding a <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">man-in-the-middle attack</a>. Furthermore, users get around the inconvenience of manually comparing each others fingerprints through e.g, an outbound channel over the internet.<br> One can also verify the identity of a peer through comparing fingerprints. </p>
+				</div>
+				<div class="col-2">
+					<h3 class="subtitle">PGP - Pretty Good Privacy</h3>
+					<p>PGP, which stands for "Pretty Good Privacy" was designed for encrypting, decrypting and signing e-mail and data like, texts, files, whole disk partitions.  </p>
+					<p>By using PGP for e-mail to exchange messages, at least two or more peers each have an keypair. Now, if you want to verify the key, you can't make use of a protocol as like with OTR. It can only be done by verifying the fingerprint of the peer you want to communicate with, preferrably over a secure channel.</p>
+					<p>It also comes with digital signatures which are used for message authentication and integrity checking. The latter is only used to see whether the message has been tampered with and if the sender was the real sender. With PGP you can't deny to ever have received the message like you can with OTR.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container-inner">
+			<p class="pull-right"><a href="#">Back to top</a></p>
+			<p>OTR - Free and open source software.</p>
+			<p>We would like to thank <a href="https://www.gandi.net/">Gandi</a> for providing us with a wildcard SSL certificate.</p>
+		</div>
+	</footer>
 
     </div><!-- /.container -->
 

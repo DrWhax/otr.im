@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 ie-7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie-8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -10,8 +14,11 @@
     <title>OTR.im - Whispering Off The Record</title>
 
     <!-- Bootstrap core CSS -->
+	<!--
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./assets/css/custom.css" rel="stylesheet">
+	<link href="./assets/css/custom.css" rel="stylesheet">
+	-->
+	<link href="./assets/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -51,72 +58,49 @@
       </div>
     </div>
 
-	<div class="container">
-		<div id="img">
-			<div class="imgdesc">
-			<h1>Instant messaging,</h1>
-			<h2>it's easy, pick your client.</h2>
+	<div class="container" id="container0">
+		<div class="container-inner">
+			<div id="img">
+				<div class="imgdesc">
+				<h1>Instant messaging,</h1>
+				<h2>it's easy, pick your client.</h2>
+			</div>
 		</div>
 	  </div>
 	</div>
 
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
+	<div class="container" id="container1">
+		<div class="container-inner">
 
-    <div class="container marketing">
-
-    
-      <!-- START THE FEATURETTES -->
-
-	 <h2 class=featurette-heading align="center">OTR capable clients</h2>
+	 	<h2 class=featurette-heading>OTR capable clients</h2>
+      <hr class="featurette-divider">
+		<div class="row featurette">
+			<h2 class="featurette-heading"><a href="https://pidgin.im/" target="_blank">Pidgin</a> <span class="text-muted">open source IM client with OTR plugin.</span></h2>
+			<img class="featurette-image align-left img-responsive" src="./assets/img/pidgin.gif" alt="Pidgin">
+			<p class="lead">Pidgin is an Open-Source IM client for Windows and GNU/Linux with a plugin for having OTR conversations over many protocols.</p>
+		</div>
 
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading"><a href="https://pidgin.im/" target="_blank">Pidgin</a> <span class="text-muted">open source IM client with OTR plugin.</span></h2>
-          <p class="lead">Pidgin is an Open-Source IM client for Windows and GNU/Linux with a plugin for having OTR conversations over many protocols.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="./assets/img/pidgin.gif" alt="Pidgin">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="./assets/img/adium.jpg" alt="Adium">
-        </div>
-        <div class="col-md-7">
           <h2 class="featurette-heading"><a href="https://adium.im/" target="_blank">Adium</a> <span class="text-muted">- an open source client for Mac OSX.</span></h2>
+          <img class="featurette-image align-right img-responsive" src="./assets/img/adium.jpg" alt="Adium">
           <p class="lead">Adium is a free and open source instant messaging client for OS X. It has support for various IM protocols and comes with OTR by default.</p>
-        </div>
       </div>
 
       <hr class="featurette-divider">
-
       <div class="row featurette">
-        <div class="col-md-7">
           <h2 class="featurette-heading"><a href="https://guardianproject.info/apps/chatsecure/" target="_blank">Chatsecure </a> <span class="text-muted"> - an OTR client for Jabber on Android and iOS.</span></h2>
+          <img class="featurette-image  align-left img-responsive" src="./assets/img/chatsecure.png" height="50%" width="50%" alt="Chatsecure">
           <p class="lead">ChatSecure, formerly Gibberbot, is a fully featured instant messaging application integrated with “Off the Record” capabilities.</p>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="./assets/img/chatsecure.png" height="50%" width="50%" alt="Chatsecure">
-        </div>
-      </div>
 
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="./assets/img/textsecure.png" height="50%" width="50%" alt="Textsecure">
-        </div>
-        <div class="col-md-7">
-	<h2 class="featurette-heading"><a href="https://whispersys.com/" target="_blank">Textsecure</a> <span class="text-muted">- a modified OTR protocol for Android.</span></h2>
+		<h2 class="featurette-heading"><a href="https://whispersys.com/" target="_blank">Textsecure</a> <span class="text-muted">- a modified OTR protocol for Android.</span></h2>
+          <img class="featurette-image align-right img-responsive" src="./assets/img/textsecure.png" height="50%" width="50%" alt="Textsecure">
           <p class="lead">Textsecure provides a modified OTR protocol over SMS and data networks, however, without interopability with standard Jabber networks. Now for Android, soon for iOS.</p>
-        </div>
       </div>
 
 
@@ -124,64 +108,47 @@
 
 
       <div class="row featurette">
-        <div class="col-md-7">
           <h2 class="featurette-heading"><a href="https://crypto.cat/" target="_blank">Cryptocat </a> <span class="text-muted"> - an OTR client for webbrowsers and smartphones.</span></h2>
+          <img class="featurette-image align-left img-responsive" src="./assets/img/cryptocat.png" height="70%" width="70%" alt="Cryptocat">
           <p class="lead">Cryptocat is a fun, accessible app for having encrypted chat with your friends, right in your browser and mobile phone.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="./assets/img/cryptocat.png" height="70%" width="70%" alt="Cryptocat">
-        </div>
       </div>
 
       <hr class="featurette-divider">
 
-
       <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="./assets/img/irssi-otr.png" alt="Irssi-OTR">
-        </div>
-        <div class="col-md-7">
-	<h2 class="featurette-heading"><a href="https://github.com/cryptodotis/irssi-otr/" target="_blank">Irssi-OTR</a> <span class="text-muted">- an Irssi OTR plugin.</span></h2>
-          <p class="lead">Irssi-OTR is a plugin for the Irssi client which offers OTR functionality for those who prefer to work from their terminals.</p>
-        </div>
+			<h2 class="featurette-heading"><a href="https://github.com/cryptodotis/irssi-otr/" target="_blank">Irssi-OTR</a> <span class="text-muted">- an Irssi OTR plugin.</span></h2>
+          	<img class="featurette-image align-right img-responsive" src="./assets/img/irssi-otr.png" alt="Irssi-OTR">
+          	<p class="lead">Irssi-OTR is a plugin for the Irssi client which offers OTR functionality for those who prefer to work from their terminals.</p>
       </div>
 
 	  <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7">
           <h2 class="featurette-heading"><a href="https://github.com/mmb/weechat-otr#readme" target="_blank">WeeChat-OTR </a> <span class="text-muted"> - an OTR plugin for the WeeChat client.</span></h2>
+          <img class="featurette-image align-left img-responsive" src="./assets/img/weechat-otr.png" height="70%" width="70%" alt="WeeChat-OTR">
           <p class="lead">WeeChat is a commandline interface client. It runs on many platforms like Linux, Unix, BSD, GNU Hurd, Mac OS X and Windows (cygwin). Their plugin ecosystem allows for using various protocols like Jabber and IRC. Also OTR.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="./assets/img/weechat-otr.png" height="70%" width="70%" alt="WeeChat-OTR">
-        </div>
       </div>
 
       <hr class="featurette-divider">
-
 
       <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="./assets/img/jitsi-otr.png" height="70%" width="70%" alt="Jitsi">
-        </div>
-        <div class="col-md-7">
-	<h2 class="featurette-heading"><a href="https://jitsi.org/" target="_blank">Jitsi</a> <span class="text-muted">- Open Source Video Calls and Chat.</span></h2>
+			<h2 class="featurette-heading"><a href="https://jitsi.org/" target="_blank">Jitsi</a> <span class="text-muted">- Open Source Video Calls and Chat.</span></h2>
+          <img class="featurette-image align-right img-responsive" src="./assets/img/jitsi-otr.png" height="70%" width="70%" alt="Jitsi">
           <p class="lead">Secure video calls, conferencing, chat, desktop sharing, file transfer, support for your favorite OS, and IM network. All this, and more, in Jitsi.</p>
-        </div>
       </div>
 
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
+     </div>
+  </div>
 
 
       <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>OTR - Free and open source software.</p>
+      <footer class="footer">
+		<div class="container-inner">
+			<p class="pull-right"><a href="#">Back to top</a></p>
+			<p>OTR - Free and open source software.</p>
 
-		<p>We would like to thank <a href="https://www.gandi.net/">Gandi</a> for providing us with a wildcard SSL certificate.</p>
+			<p>We would like to thank <a href="https://www.gandi.net/">Gandi</a> for providing us with a wildcard SSL certificate.</p>
+		</div>
       </footer>
 
     </div><!-- /.container -->
