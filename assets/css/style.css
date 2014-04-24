@@ -89,6 +89,7 @@ a:hover {
 .navbar a {
 	color: #666;
 	text-decoration: none;
+	outline: none;
 }
 
 .navbar li.active > a,
