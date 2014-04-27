@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 ie-7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie-8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="OTR developers">
+    <title>OTR.im - Whispering Off The Record</title>
+
+	<link href="./assets/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="./assets/js/html5shiv.js"></script>
+      <script src="./assets/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">OTR.im</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+				<li><a href="clients.html">Clients</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="blog/">Blog</a></li>
+			  </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+	<div class="container" id="container0">
+		<div class="container-inner">
+			<div id="img">
+				<div class="imgdesc">
+					<h1>Instant messaging,</h1>
+					<h2>Off-the-Record</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="container1">
+		<div class="container-inner">
+			<div class="row">
+				<h2 class=featurette-heading>About OTR.im</h2>
+				<p>Soon.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container-inner">
+			<p class="pull-right"><a href="#">Back to top</a></p>
+			<p>OTR - Free and open source software.</p>
+			<p>We would like to thank <a href="https://www.gandi.net/">Gandi</a> for providing us with a wildcard SSL certificate.</p>
+		</div>
+	</footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/docs.min.js"></script>
+	<script type="text/javascript">
+	function aligndesc() {
+		$this = $('#img .imgdesc');
+        var descH = $this.height();
+        var boxH = $this.parent().height();
+        if (descH < boxH) {
+            $this.css('margin-top', (boxH-descH)/2+'px');
+        }
+    }
+	$(window).on('resize load',aligndesc);
+	</script>
+
+  </body>
+</html>
+
