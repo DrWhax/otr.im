@@ -377,6 +377,9 @@ a:hover {
 	.navbar-nav, .navbar-header, .navbar-collapse, .nav>li {
 		float : left;
 	}
+	.navbar li {
+		border: none;
+	}
 	.nav>li>a {
 		padding: 17px 15px;
 	}
